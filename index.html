@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
+<div class="container">
+    <div class="content">
+        <h1>Papa's Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <input id="firstname" name="first_name" type="text">
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div>
+                        <input id="lastname" name="last_name" type="text">
+                        <label for="lastname">Last Name</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">12"</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">16"</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">20"</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sauce:</legend>
+                    <div>
+                        <input type="radio" id="tomato" name="sauce">
+                        <label for="tomato">Tomato</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bbq" name="sauce">
+                        <label for="bbq">BBQ</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pesto" name="sauce">
+                        <label for="pesto">Pesto</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="whitegarlic" name="whitegarlic">
+                        <label for="whitegarlic">White Garlic Sauce</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="cheddar" name="cheddar" value="cheddar">
+                        <label for="cheddar">Cheddar Cheese</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mozzarella" name="mozzarella" value="mozzarella">
+                        <label for="pepperoni">Mozzarella</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                        <label for="mushroom">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ham" name="ham" value="ham">
+                        <label for="ham">Ham</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                        <label for="pineapple">Pineapple</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Extra:</legend>
+                    <label for="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="nothing">N/A</option>
+                        <option value="soda">Coca-Cola/Pepsi</option>
+                        <option value="pretzel">Pretzel</option>
+                        <option value="fries">Fries</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Special:</legend>
+                    <label for="SpecialRequests">Special Requests:</label>
+                    <textarea name="SpecialRequests" id="SpecialRequests" cols="10" rows="4"
+                              placeholder="Type something here..."></textarea>
+                </fieldset>
+            </div>
+            <button type="button" onclick="alert('Thank you for shopping at Papa\'s Pizzeria!')">Submit Order</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
