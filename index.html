@@ -14,12 +14,12 @@
                 <legend>Customer:</legend>
                 <div class="row">
                     <div>
-                        <input id="firstname" name="first_name" type="text">
                         <label for="firstname">First Name</label>
+                        <input id="firstname" name="first_name" type="text">
                     </div>
                     <div>
-                        <input id="lastname" name="last_name" type="text">
                         <label for="lastname">Last Name</label>
+                        <input id="lastname" name="last_name" type="text">
                     </div>
                 </div>
             </fieldset>
@@ -98,6 +98,7 @@
                     </select>
                 </fieldset>
             </div>
+            <div class="row">
             <div>
                 <fieldset>
                     <legend>Special:</legend>
@@ -105,6 +106,12 @@
                     <textarea name="SpecialRequests" id="SpecialRequests" cols="10" rows="4"
                               placeholder="Type something here..."></textarea>
                 </fieldset>
+            </div>
+            <fieldset>
+                <legend>Location</legend>
+                <textarea name="address" id="address" cols="10" rows="6"
+                          placeholder="Where would you like your pizza to be delivered?"></textarea>
+            </fieldset>
             </div>
             <button type="button" onclick="alert('Thank you for shopping at Papa\'s Pizzeria!')">Submit Order</button>
         </form>
